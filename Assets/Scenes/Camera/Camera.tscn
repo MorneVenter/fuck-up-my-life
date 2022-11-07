@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Scenes/Camera/Camera.gd" type="Script" id=1]
+
+[node name="Camera" type="Camera"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.142, 1.2, -1.513 )
+current = true
+fov = 60.0
+size = 4.0
+script = ExtResource( 1 )

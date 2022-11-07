@@ -1,0 +1,844 @@
+[gd_scene load_steps=60 format=2]
+
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Armchair_11.glb" type="PackedScene" id=1]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Table_03.glb" type="PackedScene" id=2]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Table_43.glb" type="PackedScene" id=3]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/TV_03.glb" type="PackedScene" id=4]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Table_05.glb" type="PackedScene" id=5]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Bed_06.glb" type="PackedScene" id=6]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Washing_machine_01.glb" type="PackedScene" id=7]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Refrigerator_door.glb" type="PackedScene" id=8]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Refrigerator.glb" type="PackedScene" id=9]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Refrigerator_door_01.glb" type="PackedScene" id=10]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Table_01.glb" type="PackedScene" id=11]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Microwave_03.glb" type="PackedScene" id=12]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Microwave_door_03.glb" type="PackedScene" id=13]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Toaster_01.glb" type="PackedScene" id=14]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Chair_16.glb" type="PackedScene" id=15]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Plants.glb" type="PackedScene" id=16]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Basket.glb" type="PackedScene" id=17]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Dirty__clothes.glb" type="PackedScene" id=18]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Bote.glb" type="PackedScene" id=19]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Mop_01.glb" type="PackedScene" id=20]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Lamps_01.glb" type="PackedScene" id=21]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Video_player_02.glb" type="PackedScene" id=22]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Control_02.glb" type="PackedScene" id=23]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Radio_01.glb" type="PackedScene" id=24]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Trash_can.glb" type="PackedScene" id=25]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Table_07.glb" type="PackedScene" id=26]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Table_08.glb" type="PackedScene" id=27]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Magazines.glb" type="PackedScene" id=28]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Magazine_01.glb" type="PackedScene" id=29]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Magazine_03.glb" type="PackedScene" id=30]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Book_01.glb" type="PackedScene" id=31]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Book_02.glb" type="PackedScene" id=32]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Book.glb" type="PackedScene" id=33]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Pizza_02.glb" type="PackedScene" id=34]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Soda_01.glb" type="PackedScene" id=35]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Soda_02.glb" type="PackedScene" id=36]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Cereal_08.glb" type="PackedScene" id=37]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Fast_food.glb" type="PackedScene" id=38]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Fast_food_04.glb" type="PackedScene" id=39]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Frying_13.glb" type="PackedScene" id=40]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Frying_04.glb" type="PackedScene" id=41]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Toilet_paper.glb" type="PackedScene" id=42]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Basket_Tapa.glb" type="PackedScene" id=43]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Pillow_08.glb" type="PackedScene" id=44]
+[ext_resource path="res://ExternalAssets/Models/PSX_House/Sliced_pizza.glb" type="PackedScene" id=45]
+[ext_resource path="res://Assets/Scripts/Resources/world_environment.tres" type="Environment" id=46]
+[ext_resource path="res://Assets/Sprites/white.png" type="Texture" id=47]
+[ext_resource path="res://ExternalAssets/Media/Video/doom.ogv" type="VideoStream" id=48]
+[ext_resource path="res://ExternalAssets/Fonts/PoorStory-Regular.ttf" type="DynamicFontData" id=49]
+[ext_resource path="res://Assets/Scenes/Camera/Camera.tscn" type="PackedScene" id=50]
+[ext_resource path="res://Assets/Scenes/Levels/Apartment/Apartment.gd" type="Script" id=51]
+
+[sub_resource type="SpatialMaterial" id=1]
+emission_enabled = true
+emission = Color( 1, 1, 1, 1 )
+emission_energy = 0.5
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="Shader" id=2]
+code = "/*
+	ゆらゆらシェーダー by あるる（きのもと 結衣）
+	Yurayura Shader by Yui Kinomoto @arlez80
+
+	MIT License
+*/
+shader_type spatial;
+// render_mode;
+
+uniform float speed = 0.6;
+uniform float ring_scale = 4.4;
+uniform float wave_scale = 8.454;
+uniform float random_scale = 4.6;
+uniform float noise_scale = 0.03;
+
+
+vec3 hsv2rgb( float h, float s, float v )
+{
+	return (
+		(
+			clamp(
+				abs( fract( h + vec3( 0.0, 2.0, 1.0 ) / 3.0 ) * 6.0 - 3.0 ) - 1.0
+			,	0.0
+			,	1.0
+			) - 1.0
+		) * s + 1.0
+	) * v;
+}
+
+vec2 random( vec2 pos )
+{ 
+	return fract(
+		sin(
+			vec2(
+				dot(pos, vec2(12.9898,78.233))
+			,	dot(pos, vec2(-148.998,-65.233))
+			)
+		) * 43758.5453
+	);
+}
+
+float value_noise( vec2 pos )
+{
+	vec2 p = floor( pos );
+	vec2 f = fract( pos );
+
+	float v00 = random( p + vec2( 0.0, 0.0 ) ).x;
+	float v10 = random( p + vec2( 1.0, 0.0 ) ).x;
+	float v01 = random( p + vec2( 0.0, 1.0 ) ).x;
+	float v11 = random( p + vec2( 1.0, 1.0 ) ).x;
+
+	vec2 u = f * f * ( 3.0 - 2.0 * f );
+
+	return mix( mix( v00, v10, u.x ), mix( v01, v11, u.x ), u.y );
+}
+
+void fragment( )
+{
+	vec2 shift_uv = UV;
+	shift_uv.x += value_noise( UV * random_scale + sin( TIME * speed ) );
+	shift_uv.y += sin( cos( TIME ) * speed );
+	float x = shift_uv.x + sin( shift_uv.y * wave_scale );
+	float f = mod( x * ring_scale + random( UV ).x * noise_scale, 1.0 );
+
+	ALBEDO = hsv2rgb( f, 1.0, 1.0 );
+}
+"
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = SubResource( 2 )
+shader_param/speed = 0.6
+shader_param/ring_scale = 6.0
+shader_param/wave_scale = 4.0
+shader_param/random_scale = 10.0
+shader_param/noise_scale = 0.2
+
+[sub_resource type="CubeMesh" id=4]
+
+[sub_resource type="SpatialMaterial" id=6]
+emission_enabled = true
+emission = Color( 1, 1, 1, 1 )
+emission_energy = 16.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="ViewportTexture" id=5]
+viewport_path = NodePath("Base Decor/TV_03/Viewport")
+
+[sub_resource type="Animation" id=7]
+resource_name = "main"
+length = 30.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Base Decor/TV_03/Screen:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 2.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Base Decor/TV_03/Doomer:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 2.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Base Decor/TV_03/Viewport/VideoPlayer:bus")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 19.7, 19.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ "Video", "Video", "Master" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Lights/SpotLight:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Control:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 19.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/5/type = "method"
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 29 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "_done"
+} ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Control/text2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.1, 23.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Control/text:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0.1, 23.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="DynamicFont" id=8]
+size = 42
+use_filter = true
+extra_spacing_char = -1
+extra_spacing_space = 20
+font_data = ExtResource( 49 )
+
+[node name="Apartment" type="Spatial"]
+script = ExtResource( 51 )
+
+[node name="Camera" parent="." instance=ExtResource( 50 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.142, 1.2, -1.513 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 46 )
+
+[node name="Walls" type="Spatial" parent="."]
+
+[node name="Table_07" parent="Walls" instance=ExtResource( 26 )]
+transform = Transform( -2.18557e-07, 1, -2.18557e-07, 0, -4.37114e-08, -5, -5, -4.37114e-08, 9.55343e-15, -3.56541, 2.34093, 0 )
+
+[node name="Table_08" parent="Walls" instance=ExtResource( 26 )]
+transform = Transform( -2.18557e-07, -1, -2.18557e-07, 0, -4.37114e-08, 5, -5, 4.37114e-08, 9.55343e-15, 3.51714, 2.34093, 0 )
+
+[node name="Table_10" parent="Walls" instance=ExtResource( 27 )]
+transform = Transform( 2.18557e-07, -3.82137e-15, -5, -4.37114e-07, -1, 0, -5, 8.74228e-08, -2.18557e-07, 0, 4.34261, 0.923817 )
+
+[node name="Table_09" parent="Walls" instance=ExtResource( 26 )]
+transform = Transform( 5, 0, 0, 0, -4.37114e-08, 5, 0, -1, -2.18557e-07, -0.0185208, 2.34093, 6.0238 )
+
+[node name="Table_11" parent="Walls" instance=ExtResource( 26 )]
+transform = Transform( 5, 0, 0, 0, -4.37114e-08, -5, 0, 1, -2.18557e-07, -0.0185208, 2.34093, -4.29601 )
+
+[node name="Base Decor" type="Spatial" parent="."]
+
+[node name="TV_03" parent="Base Decor" instance=ExtResource( 4 )]
+transform = Transform( 0.939268, 0, -0.343184, 0, 1, 0, 0.343184, 0, 0.939268, -1.29503, 0.446259, 1.51508 )
+
+[node name="TV_03" parent="Base Decor/TV_03" index="0"]
+material/1 = SubResource( 1 )
+
+[node name="Screen" type="MeshInstance" parent="Base Decor/TV_03"]
+transform = Transform( 0.6, 0, 0, 0, 0.35, 0, 0, 0, 0.011, 0, 0.532632, -0.0355471 )
+material_override = SubResource( 3 )
+cast_shadow = 0
+mesh = SubResource( 4 )
+
+[node name="Viewport" type="Viewport" parent="Base Decor/TV_03"]
+size = Vector2( 560, 315 )
+render_target_v_flip = true
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+
+[node name="VideoPlayer" type="VideoPlayer" parent="Base Decor/TV_03/Viewport"]
+margin_right = 560.0
+margin_bottom = 315.0
+rect_min_size = Vector2( 560, 315 )
+stream = ExtResource( 48 )
+autoplay = true
+bus = "Video"
+
+[node name="Doomer" type="Sprite3D" parent="Base Decor/TV_03"]
+transform = Transform( 0.21, 0, 0, 0, 0.22, 0, 0, 0, 0.3, 0, 0.540737, -0.0594519 )
+visible = false
+material_overlay = SubResource( 6 )
+texture = SubResource( 5 )
+
+[node name="Armchair_11" parent="Base Decor" instance=ExtResource( 1 )]
+transform = Transform( -0.983994, 0, -0.178201, 0, 1, 0, 0.178201, 0, -0.983994, -0.579305, 0, -1.48341 )
+
+[node name="Armchair_12" parent="Base Decor" instance=ExtResource( 1 )]
+transform = Transform( -0.0415444, 0, 0.999137, 0, 1, 0, -0.999137, 0, -0.0415444, 2.04564, 0, -0.316065 )
+
+[node name="Table_03" parent="Base Decor" instance=ExtResource( 2 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, -4.43865, 0 )
+
+[node name="Table_43" parent="Base Decor" instance=ExtResource( 3 )]
+transform = Transform( 0.924931, 0, -0.380134, 0, 1, 0, 0.380134, 0, 0.924931, -1.2053, 0, 1.32767 )
+
+[node name="Table_05" parent="Base Decor" instance=ExtResource( 5 )]
+transform = Transform( 0.98818, 0, -0.153296, 0, 1, 0, 0.153296, 0, 0.98818, -0.319605, -0.472199, 0.183735 )
+
+[node name="Bed_06" parent="Base Decor" instance=ExtResource( 6 )]
+transform = Transform( -0.10248, 0, 0.994735, -0.0400072, 0.999191, -0.00412164, -0.99393, -0.040219, -0.102397, 1.13724, 0.180279, 4.36991 )
+
+[node name="Washing_machine_01" parent="Base Decor" instance=ExtResource( 7 )]
+transform = Transform( 0.16222, 0, 0.686452, 0, 0.70536, 0, -0.686452, 0, 0.16222, 2.19906, 0, 1.85508 )
+
+[node name="Refrigerator" parent="Base Decor" instance=ExtResource( 9 )]
+transform = Transform( -0.0527519, 0, -0.703384, 0, 0.70536, 0, 0.703384, 0, -0.0527519, -2.38883, 0, -0.26598 )
+
+[node name="Refrigerator_door" parent="Base Decor/Refrigerator" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, -0.454442, 0, -0.418245 )
+
+[node name="Refrigerator_door_01" parent="Base Decor/Refrigerator" instance=ExtResource( 10 )]
+transform = Transform( 0.918898, 0, 0.407833, 0, 1.00534, 0, -0.407833, 0, 0.918898, -0.479037, 0, -0.418452 )
+
+[node name="Table_01" parent="Base Decor" instance=ExtResource( 11 )]
+transform = Transform( 0.0449214, 0, 0.773908, 0, 0.775211, 0, -0.773908, 0, 0.0449214, -1.2298, 0, 4.31651 )
+
+[node name="Microwave_03" parent="Base Decor" instance=ExtResource( 12 )]
+transform = Transform( -0.768246, 0, 0.10368, 0, 0.775211, 0, -0.10368, 0, -0.768246, -0.910254, 0, 4.23642 )
+
+[node name="Microwave_door_03" parent="Base Decor/Microwave_03" instance=ExtResource( 13 )]
+transform = Transform( -0.696026, 0, 0.718017, 0, 0.999999, 0, -0.718017, 0, -0.696026, 0.340679, 0, 0.184205 )
+
+[node name="Toaster_01" parent="Base Decor" instance=ExtResource( 14 )]
+transform = Transform( 0.278637, 0, -0.760014, 0, 0.809482, 0, 0.760014, 0, 0.278637, -1.64193, -0.0500842, 4.3767 )
+
+[node name="Chair_16" parent="Base Decor" instance=ExtResource( 15 )]
+transform = Transform( 0.480455, 0.0228537, 0.876722, -0.0400072, 0.999191, -0.00412164, -0.876106, -0.0330949, 0.480981, 1.88514, 0.199508, 2.45464 )
+
+[node name="Chair_18" parent="Base Decor" instance=ExtResource( 15 )]
+transform = Transform( 0.769048, 0.0281583, -0.638571, -0.0400072, 0.999191, -0.00412164, 0.637938, 0.0287172, 0.769552, -2.1063, 0.199508, 0.6905 )
+
+[node name="Chair_17" parent="Base Decor" instance=ExtResource( 15 )]
+transform = Transform( -0.0292075, 0.933849, -0.356473, -0.999518, -0.0235357, 0.0202391, 0.0105104, 0.356893, 0.934086, -0.423862, 0.224369, 2.48712 )
+
+[node name="Video_player_02" parent="Base Decor" instance=ExtResource( 22 )]
+transform = Transform( 0.925731, -0.00162126, -0.378179, -0.00566913, 0.999819, -0.0181635, 0.37814, 0.0189585, 0.925554, -1.17751, 0.268895, 1.25176 )
+
+[node name="Plants" parent="Base Decor" instance=ExtResource( 16 )]
+transform = Transform( 0.769048, 0.0281583, -0.638571, -0.0400072, 0.999191, -0.00412164, 0.637938, 0.0287172, 0.769552, 2.15753, 0.246881, -2.56134 )
+
+[node name="Plants2" parent="Base Decor" instance=ExtResource( 16 )]
+transform = Transform( 0.769048, 0.0281583, -0.638571, -0.0400072, 0.999191, -0.00412164, 0.637938, 0.0287172, 0.769552, -2.32425, 0.246881, -1.20627 )
+
+[node name="Mop_01" parent="Base Decor" instance=ExtResource( 20 )]
+transform = Transform( -0.160127, -0.776302, -0.174619, -0.577539, -0.00913305, 0.570213, -0.547343, 0.236747, -0.550584, 1.39373, 0.0315962, 0.852425 )
+
+[node name="Mop_02" parent="Base Decor" instance=ExtResource( 20 )]
+transform = Transform( -0.108122, 0.529446, 0.605619, 0.521034, 0.511653, -0.354278, -0.612871, 0.341578, -0.408032, 1.3938, -0.0308298, -1.72876 )
+
+[node name="Bote" parent="Base Decor" instance=ExtResource( 19 )]
+transform = Transform( -0.569772, -0.0251956, -0.577496, -0.0324719, 0.810994, -0.00334533, 0.577133, 0.0207556, -0.570319, 1.53105, 0, 1.0526 )
+
+[node name="Basket" parent="Base Decor" instance=ExtResource( 17 )]
+transform = Transform( 0.624198, 0.0228547, -0.518296, -0.0324719, 0.810994, -0.00334533, 0.517783, 0.0233083, 0.624608, 2.17714, 0, 1.11716 )
+
+[node name="Dirty__clothes" parent="Base Decor/Basket" instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="Lamps_01" parent="Base Decor" instance=ExtResource( 21 )]
+transform = Transform( 0.712117, 0, 0, 0, 0.712117, 0, 0, 0, 0.712117, -0.333587, 0.182206, 1.66956 )
+
+[node name="Lamps_02" parent="Base Decor" instance=ExtResource( 21 )]
+transform = Transform( 0.712117, 0, 0, 0, 0.712117, 0, 0, 0, 0.712117, -2.37674, 0.182206, 3.84923 )
+
+[node name="Lamps_03" parent="Base Decor" instance=ExtResource( 21 )]
+transform = Transform( 0.712117, 0, 0, 0, 0.712117, 0, 0, 0, 0.712117, 2.04997, 0.180882, -1.84112 )
+
+[node name="Control_02" parent="Base Decor" instance=ExtResource( 23 )]
+transform = Transform( -0.382394, 0, 0.329643, 0, 0.504866, 0, -0.329643, 0, -0.382394, -0.882063, 0.273947, 0 )
+
+[node name="Trash_can" parent="Base Decor" instance=ExtResource( 25 )]
+transform = Transform( -0.0929227, 0, -0.496241, 0, 0.504866, 0, 0.496241, 0, -0.0929227, 0.54762, -0.0571149, 0.237939 )
+
+[node name="Radio_01" parent="Base Decor" instance=ExtResource( 24 )]
+transform = Transform( 0.460339, 0, -0.20731, 0, 0.504866, 0, 0.20731, 0, 0.460339, 0, 0.29998, 0.310525 )
+
+[node name="Control_03" parent="Base Decor" instance=ExtResource( 23 )]
+transform = Transform( -0.502267, 0, 0.0511602, 0, 0.504866, 0, -0.0511602, 0, -0.502267, -0.769265, 0.271634, 0.160357 )
+
+[node name="Clutter" type="Spatial" parent="."]
+
+[node name="Magazines" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( 0.551103, 0, -0.0854925, 0, 0.557695, 0, 0.0854925, 0, 0.551103, -0.3531, 0.266779, 0.301613 )
+
+[node name="Magazines2" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.0574915, 0, -0.554724, 0, 0.557695, 0, 0.554724, 0, -0.0574915, -0.3531, 0.2707, 0.169785 )
+
+[node name="Magazines3" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.0574915, 0, -0.554724, 0, 0.557695, 0, 0.554724, 0, -0.0574915, 0.10371, -0.0846949, 0.169785 )
+
+[node name="Magazines7" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.554657, 0, -0.0581304, 0, 0.557695, 0, 0.0581304, 0, -0.554657, -0.32183, -0.0807958, 0.169785 )
+
+[node name="Magazines8" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.106786, 0, 0.547376, 0, 0.557695, 0, -0.547376, 0, -0.106786, -1.6724, -0.0807958, 0.169785 )
+
+[node name="Magazines9" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.106786, 0, 0.547376, 0, 0.557695, 0, -0.547376, 0, -0.106786, -1.6724, -0.0807958, 3.41861 )
+
+[node name="Magazines10" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.106786, 0, 0.547376, 0, 0.557695, 0, -0.547376, 0, -0.106786, 0.304711, -0.0807958, 4.11537 )
+
+[node name="Magazines11" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.106786, 0, 0.547376, 0, 0.557695, 0, -0.547376, 0, -0.106786, 1.13823, -0.0807958, 4.11537 )
+
+[node name="Magazines12" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.106786, 0, 0.547376, 0, 0.557695, 0, -0.547376, 0, -0.106786, 1.58226, -0.0807958, 4.11537 )
+
+[node name="Magazines13" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.106786, 0, 0.547376, 0, 0.557695, 0, -0.547376, 0, -0.106786, 2.27726, -0.0807958, 4.11537 )
+
+[node name="Soda_01" parent="Clutter" instance=ExtResource( 35 )]
+transform = Transform( -0.346636, 0, -0.246852, 0, 0.42555, 0, 0.246852, 0, -0.346636, -0.573704, -0.0420359, 0 )
+
+[node name="Soda_02" parent="Clutter" instance=ExtResource( 35 )]
+transform = Transform( -0.346636, 0, -0.246852, 0, 0.42555, 0, 0.246852, 0, -0.346636, -0.573704, -0.0420359, 0.464396 )
+
+[node name="Soda_03" parent="Clutter" instance=ExtResource( 35 )]
+transform = Transform( -0.346636, 0, -0.246852, 0, 0.42555, 0, 0.246852, 0, -0.346636, 0.253964, -0.0420359, 0.464396 )
+
+[node name="Soda_04" parent="Clutter" instance=ExtResource( 35 )]
+transform = Transform( 0.0121716, 0.425376, -3.03081e-08, 0.346542, -0.00991587, 0.246785, 0.246684, -0.00705861, -0.346684, -1.49626, 0.0188352, -0.479701 )
+
+[node name="Soda_05" parent="Clutter" instance=ExtResource( 35 )]
+transform = Transform( -0.133575, -0.365181, 0.172896, 0.346542, -0.00991587, 0.246785, -0.207747, 0.218259, 0.300494, -0.744704, 0.0188352, -0.479701 )
+
+[node name="Soda_06" parent="Clutter" instance=ExtResource( 35 )]
+transform = Transform( 0.0451546, -0.415496, -0.0801018, 0.346542, -0.00991587, 0.246785, -0.242822, -0.0914162, 0.337303, -1.12401, 0.0188352, -0.479701 )
+
+[node name="Soda_07" parent="Clutter" instance=ExtResource( 35 )]
+transform = Transform( 0.236597, 0.135347, -0.326796, 0.346542, -0.00991587, 0.246785, 0.0708756, -0.40333, -0.115731, -1.39098, 0.0188352, -0.00742954 )
+
+[node name="Soda_09" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( 0.42555, 0, 0, 0, 0.42555, 0, 0, 0, 0.42555, 0, -0.0400296, 0 )
+
+[node name="Soda_10" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( 0.42555, 0, 0, 0, 0.42555, 0, 0, 0, 0.42555, -0.647964, -0.0400296, 0.387875 )
+
+[node name="Soda_11" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( 0.42555, 0, 0, 0, 0.42555, 0, 0, 0, 0.42555, -1.61034, 0.0871132, 1.00857 )
+
+[node name="Soda_20" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( 0.42555, 0, 0, 0, 0.42555, 0, 0, 0, 0.42555, -1.61034, 0.0871132, 1.17253 )
+
+[node name="Soda_21" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( 0.42555, 0, 0, 0, 0.42555, 0, 0, 0, 0.42555, -0.791202, 0.0871132, 1.31592 )
+
+[node name="Soda_12" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( -0.00197562, 0.425545, 0, -0.425545, -0.00197562, 0, 0, 0, 0.42555, -1.61034, 0.0115495, -0.706631 )
+
+[node name="Soda_13" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( -0.00051589, 0.111122, -0.410785, -0.425545, -0.00197562, 0, -0.00190707, 0.41078, 0.111123, -1.61034, 0.0115495, -0.706631 )
+
+[node name="Soda_14" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( 0.00117825, -0.253792, -0.341586, -0.425545, -0.00197562, 0, -0.00158582, 0.341582, -0.253795, 1.49053, 0.0115495, -0.706631 )
+
+[node name="Fast_food" parent="Clutter" instance=ExtResource( 38 )]
+transform = Transform( 0.000512987, -0.110496, 0.993876, -0.999989, -0.00464251, 3.697e-10, 0.00461408, -0.993866, -0.110498, -0.436672, 0.0976419, 0.775866 )
+
+[node name="Fast_food_04" parent="Clutter" instance=ExtResource( 39 )]
+transform = Transform( 0.572763, 0, -0.32238, 0, 0.657257, 0, 0.32238, 0, 0.572763, 0.216202, -0.599962, -0.188766 )
+
+[node name="Fast_food_05" parent="Clutter" instance=ExtResource( 39 )]
+transform = Transform( 0.581899, 0, 0.305582, 0, 0.657257, 0, -0.305582, 0, 0.581899, -0.188161, -0.599962, -0.188766 )
+
+[node name="Fast_food_06" parent="Clutter" instance=ExtResource( 39 )]
+transform = Transform( 0.581899, 0, 0.305582, 0, 0.657257, 0, -0.305582, 0, 0.581899, 0.206058, -0.24453, 0.128942 )
+
+[node name="Fast_food_07" parent="Clutter" instance=ExtResource( 39 )]
+transform = Transform( 0.581899, 0, 0.305582, 0, 0.657257, 0, -0.305582, 0, 0.581899, 0.206058, -0.213531, 4.34168 )
+
+[node name="Fast_food_08" parent="Clutter" instance=ExtResource( 39 )]
+transform = Transform( 0.538748, 0, -0.376479, 0, 0.657257, 0, 0.37648, 0, 0.538748, -0.937446, 0.0988041, 4.2418 )
+
+[node name="Fast_food_09" parent="Clutter" instance=ExtResource( 39 )]
+transform = Transform( 0.655415, 0, 0.0491658, 0, 0.657257, 0, -0.0491658, 0, 0.655415, -1.66596, 0.0459459, 4.08954 )
+
+[node name="Fast_food2" parent="Clutter" instance=ExtResource( 38 )]
+transform = Transform( -0.00119429, 0.257248, 0.966345, -0.999989, -0.00464251, 3.697e-10, 0.00448627, -0.966334, 0.257251, -0.436672, 0.0976419, 1.00863 )
+
+[node name="Soda_19" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( 0.000791096, -0.170401, -0.389943, -0.425545, -0.00197562, 0, -0.00181032, 0.389939, -0.170402, 1.21931, 0.0115495, -0.706631 )
+
+[node name="Soda_17" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( 0.00117825, -0.253792, -0.341586, -0.425545, -0.00197562, 0, -0.00158582, 0.341582, -0.253795, 1.49053, 0.0115495, 2.9377 )
+
+[node name="Cereal_08" parent="Clutter" instance=ExtResource( 37 )]
+transform = Transform( 0.536881, -0.0196175, 0.409309, 5.89773e-08, -0.674622, -0.0323336, 0.409779, 0.0257024, -0.536265, -0.835399, 1.25888, 0.26502 )
+
+[node name="Cereal_09" parent="Clutter" instance=ExtResource( 37 )]
+transform = Transform( -0.614315, 0.0134367, -0.28035, -0.0222556, -0.67483, 0.016424, -0.279788, 0.0241768, 0.614243, 0.571178, 0.898157, -1.07757 )
+
+[node name="Cereal_10" parent="Clutter" instance=ExtResource( 37 )]
+transform = Transform( -0.668396, 0.0243285, 0.0938908, -0.0222556, -0.67483, 0.016424, 0.0944036, 0.0131599, 0.668637, 0.571178, 0.898157, -0.891261 )
+
+[node name="Cereal_11" parent="Clutter" instance=ExtResource( 37 )]
+transform = Transform( -0.666919, 0.106551, 0.00512392, 0.0134974, 0.0521064, 0.673248, 0.105816, 0.6649, -0.0535817, 0.181613, -0.00318015, 1.51626 )
+
+[node name="Cereal_12" parent="Clutter" instance=ExtResource( 37 )]
+transform = Transform( 0.416729, -0.530498, 0.0327036, -0.00997945, 0.0337403, 0.674479, -0.531411, -0.416646, 0.0129797, 0.282612, -0.00496095, 1.51626 )
+
+[node name="Cereal_13" parent="Clutter" instance=ExtResource( 37 )]
+transform = Transform( 0.416729, -0.530498, 0.0327036, -0.00997945, 0.0337403, 0.674479, -0.531411, -0.416646, 0.0129797, -1.58076, -0.00496095, 2.79889 )
+
+[node name="Cereal_14" parent="Clutter" instance=ExtResource( 37 )]
+transform = Transform( -0.213833, -0.640002, 0.0288518, -0.00997945, 0.0337403, 0.674479, -0.640575, 0.213116, -0.0201388, -0.546883, -0.00496095, 3.48864 )
+
+[node name="Cereal_15" parent="Clutter" instance=ExtResource( 37 )]
+transform = Transform( 0.416729, -0.530498, 0.0327036, -0.00997945, 0.0337403, 0.674479, -0.531411, -0.416646, 0.0129797, -0.921605, -0.00496095, 4.59519 )
+
+[node name="Cereal_16" parent="Clutter" instance=ExtResource( 37 )]
+transform = Transform( -0.601849, -0.306426, 0.00642385, -0.00997945, 0.0337403, 0.674479, -0.30633, 0.600937, -0.0345938, -0.921605, -0.00496095, 2.29021 )
+
+[node name="Soda_18" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( 0.00109231, -0.235283, 0.354589, -0.425545, -0.00197562, 0, 0.00164618, -0.354585, -0.235285, 0.710096, 0.0115495, 3.79272 )
+
+[node name="Soda_15" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( 0.000321139, -0.0691728, -0.41989, -0.425545, -0.00197562, 0, -0.00194934, 0.419885, -0.0691735, 2.13009, 0.281729, -0.706631 )
+
+[node name="Soda_16" parent="Clutter" instance=ExtResource( 36 )]
+transform = Transform( -0.000932517, 0.200863, -0.375161, -0.425545, -0.00197562, 0, -0.00174169, 0.375157, 0.200865, 1.62141, 0.281729, -0.706631 )
+
+[node name="Soda_08" parent="Clutter" instance=ExtResource( 35 )]
+transform = Transform( 0.412973, -0.0953814, 0.0380581, 0.0666989, 0.369039, 0.201131, -0.0780851, -0.189222, 0.373082, 0.626729, -0.309191, 0.423775 )
+
+[node name="Pizza_02" parent="Clutter" instance=ExtResource( 34 )]
+transform = Transform( -0.454277, 0, -0.323506, 0, 0.557695, 0, 0.323506, 0, -0.454277, -0.357528, -0.155647, 0.235096 )
+
+[node name="Magazines14" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.454277, 0, -0.323506, 0, 0.557695, 0, 0.323506, 0, -0.454277, 2.04529, -0.0807958, 3.34304 )
+
+[node name="Magazines4" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( 0.04133, 0, -0.556161, 0, 0.557695, 0, 0.556161, 0, 0.04133, 0.10371, -0.0846949, 1.82453 )
+
+[node name="Magazines16" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( 0.04133, 0, -0.556161, 0, 0.557695, 0, 0.556161, 0, 0.04133, -1.89377, -0.0846949, 1.82453 )
+
+[node name="Magazines17" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( 0.04133, 0, -0.556161, 0, 0.557695, 0, 0.556161, 0, 0.04133, 1.25123, -0.0846949, 1.82453 )
+
+[node name="Magazines15" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.556841, 0, 0.0308495, 0, 0.557695, 0, -0.0308495, 0, -0.556841, 0.10371, -0.0846949, 0.993937 )
+
+[node name="Magazines5" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.556841, 0, 0.0308495, 0, 0.557695, 0, -0.0308495, 0, -0.556841, -1.08943, -0.0846949, 0.993937 )
+
+[node name="Magazine_01" parent="Clutter" instance=ExtResource( 29 )]
+transform = Transform( 0.393833, 0, -0.394866, 0, 0.557695, 0, 0.394866, 0, 0.393833, 0.216085, 0.24201, 0.109172 )
+
+[node name="Magazine_02" parent="Clutter" instance=ExtResource( 29 )]
+transform = Transform( 0.222862, 0, 0.51123, 0, 0.557695, 0, -0.51123, 0, 0.222862, 1.90857, 0.168226, 0.281861 )
+
+[node name="Magazine_04" parent="Clutter" instance=ExtResource( 30 )]
+transform = Transform( 0.354535, 0, -0.430498, 0, 0.557695, 0, 0.430498, 0, 0.354535, -0.769884, 0.100617, 0 )
+
+[node name="Magazine_05" parent="Clutter" instance=ExtResource( 30 )]
+transform = Transform( 0.353441, -0.0437659, -0.42917, 0.0278226, 0.555975, -0.033784, 0.430498, 0, 0.354535, 1.84695, 0.0288637, 0 )
+
+[node name="Magazine_07" parent="Clutter" instance=ExtResource( 30 )]
+transform = Transform( 0.556826, -0.0269173, 0.0156002, 0.0278226, 0.555975, -0.033784, -0.0139215, 0.0345096, 0.556452, 1.84695, 0.0388945, -1.00801 )
+
+[node name="Magazine_06" parent="Clutter" instance=ExtResource( 30 )]
+transform = Transform( 0.265513, -0.0071984, 0.490382, 0.0157948, 0.557471, -0.000368759, -0.49018, 0.014064, 0.26561, 1.84695, 0.0288637, 0.365754 )
+
+[node name="Magazine_03" parent="Clutter" instance=ExtResource( 29 )]
+transform = Transform( 0.354535, 0, -0.430498, 0, 0.557695, 0, 0.430498, 0, 0.354535, -0.810415, -0.114137, 1.07132 )
+
+[node name="Magazine_08" parent="Clutter" instance=ExtResource( 29 )]
+transform = Transform( 0.48343, 0, 0.278063, 0, 0.557695, 0, -0.278063, 0, 0.48343, -1.82974, -0.114137, 1.07132 )
+
+[node name="Magazine_09" parent="Clutter" instance=ExtResource( 29 )]
+transform = Transform( 0.0470255, 0, 0.555709, 0, 0.557695, 0, -0.555709, 0, 0.0470255, -1.17987, -0.114137, 0.292447 )
+
+[node name="Magazines6" parent="Clutter" instance=ExtResource( 28 )]
+transform = Transform( -0.182368, 0, 0.527035, 0, 0.557695, 0, -0.527035, 0, -0.182368, -1.08943, -0.0826856, 1.39846 )
+
+[node name="Book_01" parent="Clutter" instance=ExtResource( 31 )]
+transform = Transform( 0.429091, 0, -0.372071, 0, 0.56794, 0, 0.372071, 0, 0.429091, -0.867649, -0.0377966, -0.197172 )
+
+[node name="Book_02" parent="Clutter" instance=ExtResource( 31 )]
+transform = Transform( -0.386652, 0, -0.416, 0, 0.56794, 0, 0.416, 0, -0.386652, 1.32233, -0.0377966, -0.197172 )
+
+[node name="Book_03" parent="Clutter" instance=ExtResource( 31 )]
+transform = Transform( -0.386652, 0, -0.416, 0, 0.56794, 0, 0.416, 0, -0.386652, 1.32233, -0.0377966, 3.93814 )
+
+[node name="Book_04" parent="Clutter" instance=ExtResource( 31 )]
+transform = Transform( 0.560091, 0, -0.094099, 0, 0.56794, 0, 0.094099, 0, 0.560091, 0.836666, -0.0377966, 3.93814 )
+
+[node name="Book_06" parent="Clutter" instance=ExtResource( 32 )]
+transform = Transform( 0.567882, 0, -0.00815779, 0, 0.56794, 0, 0.00815779, 0, 0.567882, -0.876566, 0.00850452, -0.19137 )
+
+[node name="Book_07" parent="Clutter" instance=ExtResource( 32 )]
+transform = Transform( -0.346817, 0, -0.449749, 0, 0.56794, 0, 0.449749, 0, -0.346817, 0.514818, -0.0369011, -0.19137 )
+
+[node name="Book_08" parent="Clutter" instance=ExtResource( 32 )]
+transform = Transform( -0.464215, 0, 0.327201, 0, 0.56794, 0, -0.327201, 0, -0.464215, 1.28919, -0.0369011, 0.367468 )
+
+[node name="Book_15" parent="Clutter" instance=ExtResource( 32 )]
+transform = Transform( -0.464215, 0, 0.327201, 0, 0.56794, 0, -0.327201, 0, -0.464215, 1.28919, -0.0369011, 2.19663 )
+
+[node name="Book_09" parent="Clutter" instance=ExtResource( 32 )]
+transform = Transform( -0.464215, 0, 0.327201, 0, 0.56794, 0, -0.327201, 0, -0.464215, -1.40746, -0.0369011, 1.20075 )
+
+[node name="Book_12" parent="Clutter" instance=ExtResource( 32 )]
+transform = Transform( -0.464215, 0, 0.327201, 0, 0.56794, 0, -0.327201, 0, -0.464215, -0.536778, -0.0369011, 1.49101 )
+
+[node name="Book_13" parent="Clutter" instance=ExtResource( 32 )]
+transform = Transform( -0.464215, 0, 0.327201, 0, 0.56794, 0, -0.327201, 0, -0.464215, 1.05656, -0.0369011, 3.86882 )
+
+[node name="Book" parent="Clutter" instance=ExtResource( 33 )]
+transform = Transform( -0.223517, 0, 0.522108, 0, 0.56794, 0, -0.522108, 0, -0.223517, 0.66512, -0.0339526, -0.00493968 )
+
+[node name="Book2" parent="Clutter" instance=ExtResource( 33 )]
+transform = Transform( -0.223517, 0, 0.522108, 0, 0.56794, 0, -0.522108, 0, -0.223517, 0.813173, -0.0010148, 4.01207 )
+
+[node name="Book3" parent="Clutter" instance=ExtResource( 33 )]
+transform = Transform( -0.18253, 0, -0.537809, 0, 0.56794, 0, 0.537809, 0, -0.18253, 0.472039, -0.0339526, 0.558661 )
+
+[node name="Book4" parent="Clutter" instance=ExtResource( 33 )]
+transform = Transform( -0.365088, 0, -0.435048, 0, 0.56794, 0, 0.435048, 0, -0.365088, 2.24481, 0.886033, 1.9338 )
+
+[node name="Book5" parent="Clutter" instance=ExtResource( 33 )]
+transform = Transform( -0.167414, 0, -0.542705, 0, 0.56794, 0, 0.542705, 0, -0.167414, 2.24481, 0.922658, 1.9338 )
+
+[node name="Book6" parent="Clutter" instance=ExtResource( 33 )]
+transform = Transform( -0.386122, 0, -0.416492, 0, 0.56794, 0, 0.416492, 0, -0.386122, 2.24481, 0.968294, 1.9338 )
+
+[node name="Book7" parent="Clutter" instance=ExtResource( 33 )]
+transform = Transform( -0.194368, 0, -0.533645, 0, 0.56794, 0, 0.533645, 0, -0.194368, 2.24481, 0.885436, 1.72587 )
+
+[node name="Book_14" parent="Clutter" instance=ExtResource( 32 )]
+transform = Transform( -0.319041, 0, -0.46986, 0, 0.56794, 0, 0.46986, 0, -0.319041, 1.96373, -0.0369011, 3.86882 )
+
+[node name="Book_10" parent="Clutter" instance=ExtResource( 32 )]
+transform = Transform( -0.533502, 0, 0.194759, 0, 0.56794, 0, -0.194759, 0, -0.533502, -1.40746, 0.0146371, 1.20075 )
+
+[node name="Book_11" parent="Clutter" instance=ExtResource( 32 )]
+transform = Transform( -0.396615, 0, 0.406512, 0, 0.56794, 0, -0.406512, 0, -0.396615, -1.40746, 0.06592, 1.20075 )
+
+[node name="Frying_13" parent="Clutter" instance=ExtResource( 40 )]
+transform = Transform( -0.821179, 0, -0.57067, 0, 1, 0, 0.57067, 0, -0.821179, 0, -1.47271, -0.396116 )
+
+[node name="Frying_14" parent="Clutter" instance=ExtResource( 40 )]
+transform = Transform( -0.91237, 0, 0.409366, 0, 1, 0, -0.409366, 0, -0.91237, 1.34076, -1.47271, -1.14868 )
+
+[node name="Frying_18" parent="Clutter" instance=ExtResource( 40 )]
+transform = Transform( -0.91237, 0, 0.409366, 0, 1, 0, -0.409366, 0, -0.91237, 0.21716, -1.09758, 4.04968 )
+
+[node name="Frying_19" parent="Clutter" instance=ExtResource( 40 )]
+transform = Transform( 0.3201, 0, -0.947384, 0, 1, 0, 0.947384, 0, 0.3201, 0.759436, -1.09758, 4.04968 )
+
+[node name="Frying_04" parent="Clutter" instance=ExtResource( 41 )]
+transform = Transform( -0.222553, 0, -0.974921, 0, 1, 0, 0.974921, 0, -0.222553, -1.17293, -0.901424, -1.22644 )
+
+[node name="Frying_05" parent="Clutter" instance=ExtResource( 41 )]
+transform = Transform( -0.643643, 0, -0.765326, 0, 1, 0, 0.765326, 0, -0.643643, -1.17293, -0.608626, 1.20808 )
+
+[node name="Toilet_paper" parent="Clutter" instance=ExtResource( 42 )]
+transform = Transform( -0.404342, 0, -0.480784, 0, 0.628208, 0, 0.480784, 0, -0.404342, 0.41866, -0.492235, 0 )
+
+[node name="Toilet_paper2" parent="Clutter" instance=ExtResource( 42 )]
+transform = Transform( -0.0449173, 0.62432, -0.053409, 0.401839, 0.069786, 0.477808, 0.480784, 0, -0.404342, -1.41284, 0.240074, -1.26241 )
+
+[node name="Toilet_paper3" parent="Clutter" instance=ExtResource( 42 )]
+transform = Transform( -0.301556, 0.521764, 0.177405, 0.401839, 0.069786, 0.477808, 0.37714, 0.342839, -0.36725, -1.54432, 0.240074, -1.69847 )
+
+[node name="Pillow_08" parent="Clutter" instance=ExtResource( 44 )]
+transform = Transform( 0.62525, 0, -0.218102, 0, 0.662198, 0, 0.218102, 0, 0.62525, 1.47674, 0.0472724, 4.02491 )
+
+[node name="Pillow_11" parent="Clutter" instance=ExtResource( 44 )]
+transform = Transform( 0.0429754, 0, 0.660802, 0, 0.662198, 0, -0.660802, 0, 0.0429754, 2.12453, 1.0589, 4.02491 )
+
+[node name="Pillow_12" parent="Clutter" instance=ExtResource( 44 )]
+transform = Transform( 0.658228, 0, 0.0724016, 0, 0.662198, 0, -0.0724016, 0, 0.658228, 1.36702, 1.0589, 4.35798 )
+
+[node name="Pillow_09" parent="Clutter" instance=ExtResource( 44 )]
+transform = Transform( 0.254565, 0, 0.611313, 0, 0.662198, 0, -0.611313, 0, 0.254565, 0.862207, -0.332827, 2.36551 )
+
+[node name="Pillow_10" parent="Clutter" instance=ExtResource( 44 )]
+transform = Transform( -0.296002, -0.488146, 0.335563, -0.148399, 0.424272, 0.486289, -0.573469, 0.142172, -0.299043, 0.499356, 0.109472, -1.47965 )
+
+[node name="Basket_Tapa" parent="Clutter" instance=ExtResource( 43 )]
+transform = Transform( 0.617497, -0.273806, 0.306695, -0.0986952, 0.438494, 0.590183, -0.399113, -0.532059, 0.328567, 2.25915, 0.112929, 1.41958 )
+
+[node name="Toilet_paper4" parent="Clutter" instance=ExtResource( 42 )]
+transform = Transform( -0.1474, 0.609672, 0.0349187, 0.401839, 0.069786, 0.477808, 0.459831, 0.134447, -0.406356, -1.48756, 0.226252, -1.50918 )
+
+[node name="Sliced_pizza" parent="Clutter" instance=ExtResource( 45 )]
+transform = Transform( 0.70495, 0, 0, 0, 0.70495, 0, 0, 0, 0.70495, -0.132527, -0.286659, -0.0631773 )
+
+[node name="Sliced_pizza2" parent="Clutter" instance=ExtResource( 45 )]
+transform = Transform( -0.0852279, 0, -0.699779, 0, 0.70495, 0, 0.699779, 0, -0.0852279, -0.75624, -0.638874, -0.558866 )
+
+[node name="Sliced_pizza3" parent="Clutter" instance=ExtResource( 45 )]
+transform = Transform( -0.674623, 0, -0.204542, 0, 0.70495, 0, 0.204542, 0, -0.674623, 1.38135, -0.638874, -0.558866 )
+
+[node name="Sliced_pizza4" parent="Clutter" instance=ExtResource( 45 )]
+transform = Transform( 0.40722, 0, -0.575435, 0, 0.70495, 0, 0.575435, 0, 0.40722, -1.58886, -0.20999, -1.15546 )
+
+[node name="Frying_06" parent="Clutter" instance=ExtResource( 41 )]
+transform = Transform( -0.643643, 0, -0.765326, 0, 1, 0, 0.765326, 0, -0.643643, 0.568474, -0.80811, 4.38075 )
+
+[node name="Frying_20" parent="Clutter" instance=ExtResource( 40 )]
+transform = Transform( 0.939663, 0, 0.342102, 0, 1, 0, -0.342102, 0, 0.939663, 2.10523, -1.09758, 4.04968 )
+
+[node name="Frying_15" parent="Clutter" instance=ExtResource( 40 )]
+transform = Transform( -0.208065, 0, 0.978115, 0, 1, 0, -0.978115, 0, -0.208065, 1.34076, -1.47271, 0.638866 )
+
+[node name="Frying_16" parent="Clutter" instance=ExtResource( 40 )]
+transform = Transform( -0.208065, 0, 0.978115, 0, 1, 0, -0.978115, 0, -0.208065, -2.01859, -1.47271, 0.638866 )
+
+[node name="Frying_17" parent="Clutter" instance=ExtResource( 40 )]
+transform = Transform( -0.208065, 0, 0.978115, 0, 1, 0, -0.978115, 0, -0.208065, 1.93886, -1.22347, -0.509583 )
+
+[node name="Book_05" parent="Clutter" instance=ExtResource( 31 )]
+transform = Transform( 0.471209, 0, -0.317046, 0, 0.56794, 0, 0.317046, 0, 0.471209, 0.248938, -0.0377966, 4.2466 )
+
+[node name="Lights" type="Spatial" parent="."]
+
+[node name="FridgeLight" type="OmniLight" parent="Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08594, 0.563724, -0.146083 )
+light_color = Color( 1, 0.952941, 0.431373, 1 )
+light_energy = 1.794
+shadow_enabled = true
+omni_range = 1.0
+
+[node name="Light" type="OmniLight" parent="Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36854, 1.63226, 1.72086 )
+light_color = Color( 0.964706, 0.960784, 0.666667, 1 )
+light_energy = 3.0
+shadow_enabled = true
+omni_range = 3.0
+omni_attenuation = 1.6245
+
+[node name="Light2" type="OmniLight" parent="Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26513, 1.4211, 3.79906 )
+light_color = Color( 0.964706, 0.960784, 0.666667, 1 )
+light_energy = 2.0
+shadow_enabled = true
+omni_range = 5.661
+omni_attenuation = 1.6245
+
+[node name="Light3" type="OmniLight" parent="Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1354, 0.828223, 4.17347 )
+light_color = Color( 1, 0.94902, 0.192157, 1 )
+light_energy = 0.6
+light_specular = 4.0
+shadow_enabled = true
+omni_range = 1.0
+
+[node name="SpotLight" type="SpotLight" parent="Lights"]
+transform = Transform( 0.849331, 0, -0.52786, 0.116569, 0.975312, 0.187561, 0.514828, -0.220834, 0.828363, -1.17752, 1.1089, 1.27954 )
+visible = false
+light_color = Color( 0.223529, 0.619608, 1, 1 )
+light_energy = 12.0
+shadow_enabled = true
+shadow_bias = 0.01
+shadow_reverse_cull_face = true
+spot_range = 4.0
+spot_attenuation = 1.51572
+spot_angle = 63.73
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "main"
+anims/main = SubResource( 7 )
+
+[node name="Control" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Back" type="TextureRect" parent="Control"]
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 47 )
+expand = true
+
+[node name="text" type="RichTextLabel" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -242.0
+margin_top = -30.5
+margin_right = 242.0
+margin_bottom = 30.5
+custom_fonts/normal_font = SubResource( 8 )
+bbcode_enabled = true
+bbcode_text = "[center]doomer life simulator"
+text = "doomer life simulator"
+
+[node name="text2" type="RichTextLabel" parent="Control"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -242.0
+margin_top = -30.5
+margin_right = 242.0
+margin_bottom = 30.5
+custom_fonts/normal_font = SubResource( 8 )
+bbcode_enabled = true
+bbcode_text = "[center]a game by morne venter"
+text = "a game by morne venter"
+
+[editable path="Base Decor/TV_03"]
